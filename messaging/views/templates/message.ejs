@@ -1,0 +1,29 @@
+
+
+<% include header %>
+
+
+<div class="ui comments">
+<h3 class="ui divding header">Commentaire</h3>
+<div class="comment">
+<a class="avatar" href="/message/<%= locals.message.id %>">
+<img src="https://www.w3schools.com/howto/img_avatar.png">
+</a>
+<div class="content">
+
+<div class="metadata">
+<div class="date">
+<%= message.created_at.fromNow() %>
+</div>
+</div>
+
+<div class="test">
+<%= message.content %>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<% include footer %>
